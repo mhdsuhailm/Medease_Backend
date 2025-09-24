@@ -1,30 +1,6 @@
 import labReportModel from '../models/labReportModel.js'
 
-// const uploadLabReport = async (req, res) => {
-//   try {
-//     const { patientId, appointmentId, reportType } = req.body
-//     const file = req.file
 
-//     if (!file || !patientId || !appointmentId || !reportType) {
-//       return res.json({ success: false, message: 'Missing required fields' })
-//     }
-
-//     const report = new labReportModel({
-//       patientId,
-//       appointmentId,
-//       reportType,
-//       filename: file.filename,
-//       uploadedAt: new Date()
-//     })
-
-//     await report.save()
-
-//     res.json({ success: true, message: 'Lab report uploaded successfully' })
-//   } catch (error) {
-//     console.log(error)
-//     res.json({ success: false, message: error.message })
-//   }
-// }
 const uploadLabReport = async (req, res) => {
   try {
     const { patientId, appointmentId, reportType } = req.body
