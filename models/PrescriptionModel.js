@@ -1,4 +1,4 @@
-
+import mongoose from 'mongoose'
 
 const prescriptionSchema = new mongoose.Schema({
   appointmentId: { type: String, required: true },
